@@ -43,7 +43,7 @@ results_sim2 <-  tibble(expand.grid(pid = N,                          # Particip
          choice_self       = NA,
          choice_recommend  = NA)
 
-set.seed(1)
+set.seed(123)
 for (row in 1:nrow(results_sim2)) {
   
   # Simulate choice as draw from binomial distribution (1 = satisficing)
@@ -123,7 +123,7 @@ results_sim3 <-  tibble(expand.grid(pid = N,                               # Par
          choice_self       = NA,
          choice_recommend  = NA)
 
-set.seed(2)
+set.seed(123)
 for (row in 1:nrow(results_sim3)) {
 
   # Strategy selection for oneself
@@ -255,7 +255,7 @@ results_sim4 <-  tibble(expand.grid(pid = N,                               # Par
          choice_self       = NA,
          choice_recommend  = NA)
 
-set.seed(3)
+set.seed(123)
 for (row in 1:nrow(results_sim4)) {
 
   # Strategy selection for oneself (same as for simulation 3)
